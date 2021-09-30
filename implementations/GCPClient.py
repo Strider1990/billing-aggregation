@@ -1,8 +1,10 @@
 from pandas.core.frame import DataFrame
-from interfaces.DataTransform import DataTransform
-from interfaces.PlatformClient import PlatformClient
 from google.cloud import bigquery
 from google.oauth2.service_account import Credentials
+from interfaces import (
+	DataTransform,
+	PlatformClient
+)
 
 class GCPClient(PlatformClient, DataTransform):
 	def __init__(self,

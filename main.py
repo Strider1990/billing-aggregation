@@ -1,7 +1,9 @@
 from pandas.core.frame import DataFrame
-from implementations.GCPClient import GCPClient
-from interfaces.DataTransform import DataTransform
-from interfaces.PlatformClient import PlatformClient
+from implementations import GCPClient
+from interfaces import (
+	PlatformClient,
+	DataTransform
+)
 from dotenv import load_dotenv
 import os
 
